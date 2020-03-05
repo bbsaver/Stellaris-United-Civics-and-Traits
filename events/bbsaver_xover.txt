@@ -1,0 +1,60 @@
+namespace = bbsaver_ai_society_tech
+
+country_event = {
+	id = bbsaver_ai_society_tech.1
+	hide_window = yes
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	immediate = {
+			if = {
+				limit = {
+					has_civic = civic_bbsaver_grain_ai_society
+					}
+			
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+			give_technology = { message = no tech = tech_tech_planetary_unification }	
+			give_technology = { message = no tech = tech_colonial_centralization }	
+			give_technology = { message = no tech = tech_droid_workers }	
+			give_technology = { message = no tech = tech_galactic_administration }	
+			give_technology = { message = no tech = tech_robotic_workers }
+			give_technology = { message = no tech = tech_administrative_ai }
+			give_technology = { message = no tech = tech_self_aware_logic }
+			give_technology = { message = no tech = tech_sapient_ai }
+			give_technology = { message = no tech = tech_synthetic_workers }
+			give_technology = { message = no tech = tech_tech_synthetic_leaders }
+
+			}	
+	}
+}
+
+country_event = {
+	id = bbsaver_ai_society_tech.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+	capital_scope = {
+		generate_start_pops_bbsaver_xover = yes
+		}
+	}
+}
+
+namespace = bbsaver_other_grain_civic
+country_event = {
+	id = bbsaver_other_grain_civic.1
+	hide_window = yes
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	immediate = {
+			if = {
+				limit = {
+					has_civic = civic_bbsaver_grain_bioengineering
+					}
+			
+			give_technology = { message = no tech = tech_genome_mapping }
+			give_technology = { message = no tech = tech_gene_tailoring }	
+			}	
+	}
+}

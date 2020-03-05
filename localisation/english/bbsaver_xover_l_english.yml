@@ -1,0 +1,7 @@
+﻿l_english:
+ civic_bbsaver_grain_ai_society:0 "AI Society"
+ civic_bbsaver_grain_ai_society_desc:0 "In this society, organic and synthetic are walking alongside each other. However, could society sustain the existence of two intelligent lifeforms?" 
+ civic_tooltip_bbsaver_grain_ai_society_effects:9 "Start the game with §Y8§! £pop£ Pops being sentient robots, and with the technology and infrastructure to build more.\nThis will come at the cost of §R-5%§! Stability and §R-30%§! Unity Production.."
+ civic_bbsaver_grain_bioengineering:0 "Bioengineering Society"
+ civic_bbsaver_grain_bioengineering_desc:0 "For scientists and citizens of this society, bioengineering and gene editing is normal. This will not be without consequence however." 
+ civic_tooltip_bbsaver_grain_bioengineering_effects:9 "Start the game with Genome Sequencing and Gene Tailoring technology with 30% Faster Biology Research, at cost of §R-15%§! Unity Production."

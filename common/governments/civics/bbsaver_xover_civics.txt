@@ -1,0 +1,54 @@
+civic_bbsaver_grain_ai_society = {
+	modification = no
+	playable = { host_has_dlc = "Utopia" }
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_mechanists
+				value = civic_syncretic_evolution
+				value = civic_post_apocalyptic
+				value = civic_life_seeded
+
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		country_unity_produces_mult = -0.3
+		country_energy_produces_mult = 0.5
+		planet_stability_add = -0.05
+
+	}
+	description = "civic_tooltip_bbsaver_grain_ai_society_effects"
+}
+civic_bbsaver_grain_bioengineering = {
+	modification = no
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			NOT = {
+				value = ethic_fanatic_egalitarian
+			}
+		}
+
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		country_unity_produces_mult = -0.15
+		category_biology_research_speed_mult = 0.5
+
+	}
+	description = "civic_tooltip_bbsaver_grain_bioengineering_effects"
+}

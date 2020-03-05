@@ -1,0 +1,117 @@
+######################
+# Nanotech Series
+#####################
+
+tech_healing_material_1 = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { materials }	
+	prerequisites = { "tech_engineering_lab_1" }
+	weight = @tier1weight3
+		
+	potential = { 
+		has_valid_civic = civic_bbsaver_grain_nanotech_society
+	}	
+	modifier = {
+		ship_hull_regen_add_perc = 0.05
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+tech_healing_material_2 = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { materials }	
+	prerequisites = { "tech_healing_material_1" }
+	weight = @tier2weight3
+		
+	potential = { 
+		has_valid_civic = civic_bbsaver_grain_nanotech_society
+	}	
+	modifier = {
+		ship_hull_regen_add_perc = 0.2
+		planet_building_cost_mult = -0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+tech_healing_material_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { materials }	
+	prerequisites = { "tech_healing_material_3" }
+	is_rare = yes
+	weight = @tier3weight3
+		
+	potential = { 
+		has_valid_civic = civic_bbsaver_grain_nanotech_society
+	}	
+	modifier = {
+		ship_hull_regen_add_perc = 0.8
+		country_alloy_produces_multi = 0.5
+		planet_building_cost_mult = -0.5
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

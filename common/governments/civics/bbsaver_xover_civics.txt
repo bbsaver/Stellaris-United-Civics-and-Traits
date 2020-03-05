@@ -47,8 +47,18 @@ civic_bbsaver_grain_bioengineering = {
 	random_weight = { base = 5 }
 	modifier = {
 		country_unity_produces_mult = -0.15
-		category_biology_research_speed_mult = 0.5
+		category_biology_research_speed_mult = 0.3
 
 	}
 	description = "civic_tooltip_bbsaver_grain_bioengineering_effects"
+}
+
+civic_bbsaver_grain_nanotech_society = 
+{
+	modification = no
+	potential = {
+		ethics = { NOT = { value = auth_hive_mind } }
+	}
+	random_weight = { base = 5 }
+	description = "civic_tooltip_bbsaver_grain_nanotech_society_effects"
 }

@@ -1,0 +1,8 @@
+# called during empire initialization when starting a new game
+# scope: country
+empire_init_add_technologies = {
+	events = {
+		bbsaver_ai_society_tech.1
+		bbsaver_ai_society_tech.2
+	}
+}

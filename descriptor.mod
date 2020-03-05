@@ -1,6 +1,8 @@
-version="0.1"
+version="2.6"
 tags={
-	"Technologies"
+	"Utilities"
+	"Gameplay"
 }
-name="bbsaver_test"
+name="Astra Legacy"
 supported_version="2.5.1"
+picture="Astra_Lagacy.jpg"

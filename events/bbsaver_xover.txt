@@ -23,7 +23,7 @@ country_event = {
 			give_technology = { message = no tech = tech_self_aware_logic }
 			give_technology = { message = no tech = tech_sapient_ai }
 			give_technology = { message = no tech = tech_synthetic_workers }
-			give_technology = { message = no tech = tech_tech_synthetic_leaders }
+			give_technology = { message = no tech = tech_synthetic_leaders }
 
 			}	
 	}
@@ -55,6 +55,30 @@ country_event = {
 			
 			give_technology = { message = no tech = tech_genome_mapping }
 			give_technology = { message = no tech = tech_gene_tailoring }	
+			}	
+	}
+}
+country_event = {
+	id = bbsaver_other_grain_civic.2
+	hide_window = yes
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	immediate = {
+			if = {
+				limit = {
+					has_civic = civic_bbsaver_grain_nanotech_society
+					}
+			
+			give_technology = { message = no tech = tech_engineering_lab_1 }
+			give_technology = { message = no tech = tech_alloys_1 }
+			give_technology = { message = no tech = tech_alloys_2 }	
+			give_technology = { message = no tech = tech_luxuries_1 }	
+			give_technology = { message = no tech = tech_volatile_motes }	
+			give_technology = { message = no tech = tech_tech_exotic_gases }	
+			give_technology = { message = no tech = tech_rare_crystals }
+			give_technology = { message = no tech = tech_administrative_ai }
+			
 			}	
 	}
 }

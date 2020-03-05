@@ -1,0 +1,153 @@
+### Hope System
+hope_system_initializer = {
+	name = "Hope System"
+	class = "sc_a"
+	asteroids_distance = 115
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Hope"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "Hellia"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		has_ring = no
+		moon = {
+			name = "Hellis"
+			class = "pc_molten"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 6
+		}
+	}
+	planet = {
+		name = "luka"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+	}
+	planet = {
+		name = "Mega"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		has_ring = no
+	}
+	planet = {
+		name = "Naga"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 9
+		has_ring = no
+	}
+	planet = {
+		name = "Niga"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 3
+		has_ring = no
+	}
+	planet = {
+		name = "Egypt"
+		class = "pc_desert"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+	}
+	planet = {
+		name = "Atlantis"
+		class = "pc_ocean"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Asgard"
+		class = "pc_alpine"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = yes
+		change_orbit = 5
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		init_effect = {
+			generate_start_buildings_and_blockers = yes
+		}
+		moon = {
+			name = "brother"
+			class = "pc_barren"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 10
+		}
+		moon = {
+			name = "Sister"
+			class = "pc_barren_cold"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+			size = 12
+		}
+	}
+	planet = {
+		name = "Titania"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 32
+		change_orbit = 5
+		has_ring = no
+		moon = {
+			name = "Pasty"
+			class = "pc_nuked"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 10
+		}
+		moon = {
+			name = "Presentia"
+			class = "pc_frozen"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+			size = 13
+		}
+		moon = {
+			name = "Futuria"
+		class = ideal_planet_class
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+			size = 16
+		}
+	}
+
+}

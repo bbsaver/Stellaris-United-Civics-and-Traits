@@ -1,0 +1,76 @@
+############################
+#  Trait used by Astrain   #
+############################
+
+trait_Succubus_Influence = {
+	cost = 2
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
+	icon = "gfx/interface/icons/traits/succy.dds"
+	modifier = {
+		bio_pop_growth_speed = 0.15 
+		bio_pop_growth_from_immigration = 0.05 
+		planet_pops_energy_upkeep_mult = 0.05
+	}
+}
+
+trait_Armour_Wearer = {
+	cost = 1
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
+	icon = "gfx/interface/icons/traits/armour_wear.dds"
+	modifier = {
+		planet_jobs_minerals_upkeep_mult = 0.05
+		armies_cost_mult = 0.1
+		army_defense_health_mult = 0.6
+		army_attack_health_mult = 0.6
+		country_unity_produces_mult = 0.1
+	}
+}
+
+trait_Crazy = {
+	cost = -2
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
+	icon = "gfx/interface/icons/traits/crazy.dds"
+	modifier = {
+		pop_growth_from_immigration = -0.05
+		pop_amenities_usage_mult = 0.1
+		pop_government_ethic_attraction = -0.2
+		pop_citizen_happiness = 0.05
+		country_trust_growth = -0.05
+		army_defense_damage_mult = 0.05
+		army_attack_damage_mult = 0.05
+		ship_fire_rate_mult = 0.05
+	}
+}
+
+trait_Bloodlust = {
+	cost = -3
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
+	icon = "gfx/interface/icons/traits/bloodlust.dds"
+	modifier = {
+		pop_growth_from_immigration = -0.2
+		planet_jobs_food_product_mult = 0.1
+		army_defense_damage_mult = 0.2
+		army_attack_damage_mult = 0.2
+		country_trust_growth = -0.25
+		pop_ethic_militarist_attraction_mult = 0.3
+	}
+}
+
+trait_Potential_Psionic = {
+	cost = 2
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
+	icon = "gfx/interface/icons/traits/potential_psi.dds"
+	modifier = {
+		country_unity_produces_mult = 0.2
+		pop_citizen_happiness = 0.03
+		army_defense_damage_mult = 0.1
+		army_attack_damage_mult = 0.1
+		pop_ethic_spiritualist_attraction_mult = 0.2
+		
+	}
+}

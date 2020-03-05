@@ -1,7 +1,18 @@
 ﻿l_english:
  civic_bbsaver_grain_ai_society:0 "AI Society"
  civic_bbsaver_grain_ai_society_desc:0 "In this society, organic and synthetic are walking alongside each other. However, could society sustain the existence of two intelligent lifeforms?" 
- civic_tooltip_bbsaver_grain_ai_society_effects:9 "Start the game with §Y8§! £pop£ Pops being sentient robots, and with the technology and infrastructure to build more.\nThis will come at the cost of §R-5%§! Stability and §R-30%§! Unity Production.."
+ civic_tooltip_bbsaver_grain_ai_society_effects:9 "Start the game with §Y8§! £pop£ Pops being sentient robots, and with the technology and infrastructure to build more.\nThis will come at the cost of §R-5%§! Stability and §R-30%§! £unity£ Unity."
  civic_bbsaver_grain_bioengineering:0 "Bioengineering Society"
  civic_bbsaver_grain_bioengineering_desc:0 "For scientists and citizens of this society, bioengineering and gene editing is normal. This will not be without consequence however." 
- civic_tooltip_bbsaver_grain_bioengineering_effects:9 "Start the game with Genome Sequencing and Gene Tailoring technology with 30% Faster Biology Research, at cost of §R-15%§! Unity Production."
+ civic_tooltip_bbsaver_grain_bioengineering_effects:9 "Start the game with Genome Sequencing and Gene Tailoring technology with 30% Faster Biology Research, at cost of §R-15%§! £unity£ Unity."
+ civic_bbsaver_grain_nanotech_society:0 "Nanotech Society"
+ civic_bbsaver_grain_nanotech_society_desc:0 "This civilization has conquered the world of atom. Every nanotechnologies and strange chemical are nothing but their plaything. This will also open the door toward destruction as well..." 
+ civic_tooltip_bbsaver_grain_nanotech_society_effects:9 "Start with many nanotech-based technologies unlocked, including ability to produce basic strategic resources.\nUnlock Special §GNanotechnology§! Series as well."
+ 
+ tech_healing_material_1:0 "Crack-Filling Material"
+ tech_healing_material_1_desc:0 "Crack in spacecraft can be disasterous, but the material that could fill the crack can give us more time to fix it."
+ tech_healing_material_2:0 "Self-Repairing Material"
+ tech_healing_material_2_desc:0 "With the material that can repair itself, we will no longer need to worry about sending engineers to risk their life repairing warships or collapsing buildings ever again."
+ tech_healing_material_3:0 "Self-Growing Material"
+ tech_healing_material_3_desc:0 "Instead of menufacturing alloy, we duplicate the process in nature to grow materials. Less energy cost, more energy for something else, like taking care of those getting crush by their growing house."
+ 

@@ -100,3 +100,5 @@ trait_Drunkyard = {
 		army_defense_damage_mult = -0.2
 		army_attack_damage_mult = -0.2
 		leader_age = -10
+	}
+}

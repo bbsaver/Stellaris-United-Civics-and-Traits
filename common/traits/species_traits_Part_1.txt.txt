@@ -76,7 +76,7 @@ trait_Potential_Psionic = {
 }
 
 trait_Vampire_influence = {
-	cost = 4
+	cost = 0
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes
 	icon = "gfx/interface/icons/traits/bloodlust.dds"

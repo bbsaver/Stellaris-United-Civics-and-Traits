@@ -1,0 +1,49 @@
+
+# From Nanotech
+bbsaver_grey_goo_armies = {
+	damage = 50
+	health = 2000
+	morale = 1.00
+	collateral_damage = 3
+	war_exhaustion = 0.50
+	time = 300
+	icon_frame = 7
+	pop_limited = no
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	prerequisites = { "tech_bbsaver_nanobot_3" }
+	
+#	show_tech_unlock_if = {
+#		OR = {
+#			NOT = { has_authority = auth_machine_intelligence }
+#			has_civic = civic_machine_assimilator
+#		}
+#	}
+#	
+#	potential = {
+#		from = {
+#			NOR = {
+#				has_trait = "trait_mechanical"
+#				has_trait = "trait_machine_unit"
+#				is_sapient = no
+#			}
+#		}
+#		owner = {
+#			OR = {
+#				NOT = { has_authority = auth_machine_intelligence }
+#				has_civic = civic_machine_assimilator
+#			}
+#		}
+#	}
+}
+

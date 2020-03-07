@@ -1,18 +1,57 @@
 ﻿l_english:
+#Quick Vocab Var
+ mod_pop_factions_unity_produces_add:0 "£unity£ Faction Unity Gain"
+ mod_pop_factions_influence_produces_mult:0 "Faction Influence Gain"
+ mod_planet_amenities_mult:0 "Amenities"
+ mod_planet_crime_mult:0 "Crime"
+ mod_edict_length_mult:0 "Edict Length"
+#GRAIN Seires
  civic_bbsaver_grain_ai_society:0 "AI Society"
  civic_bbsaver_grain_ai_society_desc:0 "In this society, organic and synthetic are walking alongside each other. However, could society sustain the existence of two intelligent lifeforms?" 
- civic_tooltip_bbsaver_grain_ai_society_effects:9 "Start the game with §Y8§! £pop£ Pops being sentient robots, and with the technology and infrastructure to build more.\nThis will come at the cost of §R-5%§! Stability and §R-30%§! £unity£ Unity."
+ civic_tooltip_bbsaver_grain_ai_society_effects:9 "Start the game with §Y8§! £pop£ Pops being sentient robots, and with the technology and infrastructure to build more.\n§R-5%§! Stability\n§R-30%§ £unity£ Monthly Unity\n§G+10%§ £energy£ Monthly Energy"
  civic_bbsaver_grain_bioengineering:0 "Bioengineering Society"
  civic_bbsaver_grain_bioengineering_desc:0 "For scientists and citizens of this society, bioengineering and gene editing is normal. This will not be without consequence however." 
- civic_tooltip_bbsaver_grain_bioengineering_effects:9 "Start the game with Genome Sequencing and Gene Tailoring technology with 30% Faster Biology Research, at cost of §R-15%§! £unity£ Unity."
+ civic_tooltip_bbsaver_grain_bioengineering_effects:9 "Start the game with Genome Sequencing and Gene Tailoring technology.\n§G30%§! Faster Biology Research\n§R-15%§! £unity£ Unity."
  civic_bbsaver_grain_nanotech_society:0 "Nanotech Society"
  civic_bbsaver_grain_nanotech_society_desc:0 "This civilization has conquered the world of atom. Every nanotechnologies and strange chemical are nothing but their plaything. This will also open the door toward destruction as well..." 
  civic_tooltip_bbsaver_grain_nanotech_society_effects:9 "Start with many nanotech-based technologies unlocked, including ability to produce basic strategic resources.\nUnlock Special §GNanotechnology§! Series as well."
- 
+#Philosophy Series
+ civic_bbsaver_philosophy_utilitarianism:0 "Utilitarianism"
+ civic_bbsaver_philosophy_utilitarianism_desc:0 "There is only one morally good, and that is any action that maximize happiness of its citizens. This cilization will do anything if it will increase population's happiness."
+ civic_tooltip_bbsaver_utilitarian_amoral:9 "Can't have any §RFanatic Ethic§!."
+ civic_tooltip_bbsaver_philosophy_utilitarianism_effects:9 "Allow access to §YMachiavelli§! Edicts.\nHappiness: §G+10%§!\nMonthly Consumer Goods £consumer_goods£: §G20%§!\n"
+ civic_bbsaver_philosophy_kantian:0 "Categorical Imperative"
+ civic_bbsaver_philosophy_kantian_desc:0 "If the action cannot be applied universally as a 'good' action, then it can not be defined as 'good' at all."
+ civic_tooltip_bbsaver_kantian_amoral:9 "Can't be used alongside 'inuniversal' civics, like those allowing slavery and forced labor or genocidal.\n\nEmpire must not be §RFanatic Spiritualist§!"
+ civic_tooltip_bbsaver_philosophy_kantian_effects:9 "Allow access to §YUniversal Rights§! Edicts.\n$mod_planet_amenities_mult$: §G20%§!\n$mod_planet_crime_mult$: §G-20%§!\n"
+ civic_bbsaver_philosophy_liberalism:0 "Liberalism"
+ civic_bbsaver_philosophy_liberalism_desc:0 "Life, Freedom, and Properties are three universal rights of all life. Government only has the duty to protect this rights."
+ civic_tooltip_bbsaver_philosophy_liberalism_effects:9 "Allow access to §YUniversal Rights§! Edicts.\n$pop_factions_influence_produces_mult$: §G100%§!\n$mod_pop_factions_unity_produces_add$: §G1§!\n$planet_crime_mult$: §G-20%§!\n$mod_edict_length_mult$:§R-20%§!"
+
+#Technology
+#Nanotech 
  tech_healing_material_1:0 "Crack-Filling Material"
- tech_healing_material_1_desc:0 "Crack in spacecraft can be disasterous, but the material that could fill the crack can give us more time to fix it."
+ tech_healing_material_1_desc:0 "Crack in spacecraft can be disasterous, but the material that could fill the crack will give us more time to repair the rest."
  tech_healing_material_2:0 "Self-Repairing Material"
  tech_healing_material_2_desc:0 "With the material that can repair itself, we will no longer need to worry about sending engineers to risk their life repairing warships or collapsing buildings ever again."
  tech_healing_material_3:0 "Self-Growing Material"
  tech_healing_material_3_desc:0 "Instead of menufacturing alloy, we duplicate the process in nature to grow materials. Less energy cost, more energy for something else, like taking care of those getting crush by their growing house."
+ tech_bbsaver_nanobot_1:0 "Programmable Material"
+ tech_bbsaver_nanobot_1_desc:0 "Material that could be programmed to react differently with different input prove to be useful for construction."
+ tech_bbsaver_nanobot_2:0 "Universal Assembler"
+ tech_bbsaver_nanobot_2_desc:0 "This nanomachine can disassemble and reassemble every molecular components, helping in construction."
+ tech_bbsaver_nanobot_3:0 "Self-Replicating Nanobot"
+ tech_bbsaver_nanobot_3_desc:0 "The nanomachine that can replicate itself using various resources it could find. Good for removing the garbage."
+ tech_bbsaver_utility_fog:0 "Utility Fog"
+ tech_bbsaver_utility_fog_desc:0 "Utility fog can reshape itself into many form for many application, including construction and entertainment."
+ 
+#Buildings
+#Nanotech
+bbsaver_building_nano_fabricator:0 "Universal Fabricator" 
+bbsaver_building_nano_fabricator_desc:0 "These factories automatically break down molecules of raw materials and rearrange them into almost every imaginable manufactured products. Most specialists here are just there to give the computer new ideas for the next big thing."
+bbsaver_building_replicator_plant:0 "Replicator Plant"
+bbsaver_building_replicator_plant_desc:0 "Marvel of technology. The self-replicator employed here will eternally replicate itself, becoming the raw materials for various military and civilian application, and soon becoming the foundation of various infrastructure and even base for future machine assembly. There is however a slime chance of workers getting consumed by the grey goo by their ignorance. New Workplace PSA needed."
+bbsaver_building_utility_fog_center:0 "Utility Fog Center"
+bbsaver_building_utility_fog_center_desc:0 "Swarm of nanomachine that can reconfigure into various structures enable the virtually limitless form of maintenance, infrastructure, and amenities of our population. This center is to be the configuration database and main regulator of utility fog employed in this planet"
+# civic_tooltip_mechanists_effects:9 "Start the game with §Y8§! £pop£ Pops being robots, and with the technology and infrastructure to build more\n$mod_planet_pops_robotics_upkeep_mult$: §G-5%§!\n"
  

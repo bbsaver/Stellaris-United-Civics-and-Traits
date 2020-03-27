@@ -398,7 +398,7 @@ bbsaver_building_utility_fog_center = {
 				buildings_no_crystals = yes
 			}
 		}
-	}
+	
 	triggered_planet_modifier = {
 		potential = {
 			owner = { NOT = { has_ethic = ethic_gestalt_consciousness } }
@@ -472,6 +472,14 @@ bbsaver_building_utility_fog_center = {
 		tech_bbsaver_utility_fog
 	}
 	
+	#show_tech_unlock_if = { 
+	#	OR = {
+	#	is_regular_empire = yes
+	#	is_machine_empire = yes
+	#	}
+	#}
+
+	
 	triggered_desc = {
 		trigger = { 
 			owner = { NOT = { has_ethic = ethic_gestalt_consciousness } }	
@@ -513,13 +521,6 @@ bbsaver_building_utility_fog_center = {
 			buildings_has_crystals = yes
 		}
 	}
-
-#	ai_resource_production = {
-#		consumer_goods = 1
-#		trigger = {
-#			always = yes
-#		}
-#	}
 	
 	on_queued = {
 		IF = {

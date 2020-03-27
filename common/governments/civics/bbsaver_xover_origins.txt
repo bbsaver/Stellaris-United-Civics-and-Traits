@@ -1,0 +1,81 @@
+civic_bbsaver_grain_ai_society = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	description = "civic_tooltip_bbsaver_grain_ai_society_effects"
+		playable = { host_has_dlc = "Utopia" }
+#	potential = {
+#		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+#	}
+
+	possible = {
+		ethics = { value = fanatic_materialist}
+		NOT = { value = ethic_gestalt_consciousness }
+	#	OR =
+	#		{
+	#			value = origin_mechanists
+	#		}
+		}
+		}
+	
+	random_weight = { base = 5 }
+	modifier = {
+#		country_unity_produces_mult = -0.3
+#		country_energy_produces_mult = 0.05
+#		planet_stability_add = -0.1
+		pop_demotion_time_mult = 0.45
+
+	}
+	advanced_start = yes
+
+}
+civic_bbsaver_grain_bioengineering = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+
+#	modification = no
+#	potential = {
+#		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+#	}
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_egalitarian
+				value = ethic_gestalt_consciousness
+			}
+		}
+
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		country_unity_produces_mult = -0.15
+		planet_stability_add = -5
+#		pop_happiness = -0.05
+		category_biology_research_speed_mult = 0.3
+
+	}
+	advanced_start = yes
+	description = "civic_tooltip_bbsaver_grain_bioengineering_effects"
+}
+
+civic_bbsaver_grain_nanotech_society = 
+{
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+
+#	modification = no
+	possible = {
+		ethics = { NOT = { value = auth_hive_mind } }
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		country_unity_produces_mult = -0.2
+#		country_food_produces_mult = -0.2
+		planet_crime_mult = 0.3
+
+	}
+	advanced_start = yes
+	description = "civic_tooltip_bbsaver_grain_nanotech_society_effects"
+}

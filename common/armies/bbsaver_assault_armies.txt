@@ -1,14 +1,15 @@
 
 # From Nanotech
 bbsaver_grey_goo_armies = {
-	damage = 50
-	health = 2000
-	morale = 1.00
+	damage = 3.0
+	health = 5.0
+	morale = 3.0
 	collateral_damage = 3
-	war_exhaustion = 0.50
+	war_exhaustion = 2.0
 	time = 300
 	icon_frame = 7
 	pop_limited = no
+	has_species = no
 
 	resources = {
 		category = armies

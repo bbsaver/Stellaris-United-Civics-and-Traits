@@ -1,67 +1,11 @@
-civic_bbsaver_grain_ai_society = {
-	modification = no
-	playable = { host_has_dlc = "Utopia" }
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-	}
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_materialist
-				value = ethic_materialist
-				value = ethic_fanatic_materialist
-			}
-		}
-		civics = {
-			NOT = {
-				value = civic_mechanists
-				value = civic_syncretic_evolution
-				value = civic_post_apocalyptic
-				value = civic_life_seeded
-
-			}
-		}
-	}
-	random_weight = { base = 5 }
-	modifier = {
-		country_unity_produces_mult = -0.3
-		country_energy_produces_mult = 0.2
-		planet_stability_add = -0.05
-
-	}
-	description = "civic_tooltip_bbsaver_grain_ai_society_effects"
-}
-civic_bbsaver_grain_bioengineering = {
-	modification = no
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-	}
-	possible = {
-		ethics = {
-			NOT = {
-				value = ethic_fanatic_egalitarian
-			}
-		}
-
-	}
-	random_weight = { base = 5 }
-	modifier = {
-		country_unity_produces_mult = -0.15
-		category_biology_research_speed_mult = 0.3
-
-	}
-	description = "civic_tooltip_bbsaver_grain_bioengineering_effects"
-}
-
-civic_bbsaver_grain_nanotech_society = 
+civic_bbsaver_beta_tester = 
 {
 	modification = no
-	potential = {
-		ethics = { NOT = { value = auth_hive_mind } }
-	}
-	random_weight = { base = 5 }
-	description = "civic_tooltip_bbsaver_grain_nanotech_society_effects"
+		random_weight = { base = 0 }
+
+	description = "civic_tooltip_bbsaver_beta_tester_effects"
 }
+
 
 #Philosophy Series
 civic_bbsaver_philosophy_utilitarianism = {
@@ -93,6 +37,35 @@ civic_bbsaver_philosophy_utilitarianism = {
 
 	}
 	description = "civic_tooltip_bbsaver_philosophy_utilitarianism_effects"
+}
+civic_bbsaver_philosophy_realism = {
+	modification = yes
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_bbsaver_utilitarian_amoral
+				value = ethic_fanatic_egalitarian
+				value = ethic_fanatic_authoritarian
+				value = ethic_fanatic_materialist
+				value = ethic_fanatic_spiritualist
+				value = ethic_fanatic_xenophile
+				value = ethic_fanatic_xenophobe
+				value = ethic_fanatic_militarist
+				value = ethic_fanatic_pacifist
+			}
+		}
+
+	}
+	random_weight = { base = 10 }
+	modifier = {
+		country_alloys_produces_mult = 0.2
+		#Allow Machiavelli Edicts as well.
+
+	}
+	description = "civic_tooltip_bbsaver_philosophy_realism_effects"
 }
 
 #Realism
@@ -131,9 +104,9 @@ civic_bbsaver_philosophy_kantian = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		#planet_stability_add = 0.1
+		planet_stability_add = 10
 		#country_amen_produces_mult
-		planet_amenities_mult = 0.2
+		#planet_amenities_mult = 0.2
 		planet_crime_mult = -0.2
 		#country_connsumer_goods_produces_mult = 0.2
 		#Allow Universal Right Edicts as well.
@@ -164,10 +137,11 @@ civic_bbsaver_philosophy_liberalism = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		pop_factions_influence_produces_mult = 1
-		pop_factions_unity_produces_add = 1
-		country_unity_produces_mult = 0.1
-		edict_length_mult = -0.2
+		pop_factions_influence_produces_mult = 0.1
+		planet_crime_mult = -0.2
+		#pop_factions_unity_produces_add = 1
+		#country_unity_produces_mult = 0.1
+		#edict_length_mult = -0.2
 		#Allow Universal Right Edicts as well.
 
 	}

@@ -2,23 +2,23 @@
  hope_system_initializer_NAME:0 "Hope System"
  hope_system_initializer_DESC:0 "A system that is the homeworld of Ambitious Astrain. 2 neighbour exist"
  
- trait_Slight_Succubus_Influence:0 "Succubus Influence"
- trait_Slight_Succubus_Influence_desc:0 "The lust demon succubus has a slight influence on this race, results in the increase of the reproductive desire and attrative charms."
+ trait_darthnp_succubus_influence:0 "Succubus Influence"
+ trait_darthnp_succubus_influence_desc:0 "The lust demon succubus has a slight influence on this race, results in the increase of the reproductive desire and attrative charms."
 
- trait_Armour_Wearer:0 "Armour wearer"
- trait_Armour_Wearer_desc:0 "This species always wear armor regardless of their activities. Wheter this is due to their biology, strange mental process, or culture are unknown."
+ trait_darthnp_armour_wearer:0 "Armour wearer"
+ trait_darthnp_armour_wearer_desc:0 "This species always wear armor regardless of their activities. Wheter this is due to their biology, strange mental process, or culture are unknown."
 
- trait_Crazy:0 "Crazy"
- trait_Crazy_desc:0 "This race is crazy and deviant. It's generally ill-advised to trust them or warn them about this behavior and they're harder to control. However, they seem to be happy with this and are very effective in battlefield""
+ trait_darthnp_crazy:0 "Crazy"
+ trait_darthnp_crazy_desc:0 "This race is crazy and deviant. It's generally ill-advised to trust them or warn them about this behavior and they're harder to control. However, they seem to be happy with this and are very effective in battlefield""
 
- trait_Bloodlust:0 "Bloodlust"
- trait_Bloodlust_desc:0 "This race is bloodlust and generally desire for war and destruction. they could drink the enemy's corpse blood. your world might be next."
+ trait_darthnp_bloodlust:0 "Bloodlust"
+ trait_darthnp_bloodlust_desc:0 "This race is bloodlust and generally desire for war and destruction. they could drink the enemy's corpse blood. your world might be next."
 
- trait_Potential_Psionic:0 "potential psionic"
- trait_Potential_Psionic_desc:0 "Some psionic power occour to member of this race. Meaning that they have potential of Psionic. Feel the psionic, And become a Psionic like their father before."
+ trait_darthnp_potential_psionic:0 "potential psionic"
+ trait_darthnp_potential_psionic_desc:0 "Some psionic power occour to member of this race. Meaning that they have potential of Psionic. Feel the psionic, And become a Psionic like their father before."
 
- trait_Vampire_influence:0 "Vampire Influence"
- trait_Vampire_influence_desc:0 "This species has influence from Vampire, an undead that drain blood from the life, powerful and fearful. You might be the next one to be drained dry"
+ trait_darthnp_vampire_influence:0 "Vampire Influence"
+ trait_darthnp_vampire_influence_desc:0 "This species has influence from Vampire, an undead that drain blood from the life, powerful and fearful. You might be the next one to be drained dry"
 
- trait_Drunkyard:0 "Drunkyard"
- trait_Drunkyard_desc:0 "This specie like to drink alcohol, Result in Amentilies but Repugnant and Body Weakness"
+ trait_darthnp_drunkyard:0 "Drunkyard"
+ trait_darthnp_drunkyard_desc:0 "This specie like to drink alcohol, Result in Amentilies but Repugnant and Body Weakness"

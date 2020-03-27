@@ -2,7 +2,7 @@
 #  Trait used by Astrain   #
 ############################
 
-trait_darthnp_succubus_Influence = {
+trait_darthnp_succubus_influence = {
 	cost = 2
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes
@@ -14,7 +14,7 @@ trait_darthnp_succubus_Influence = {
 	}
 }
 
-trait_darthnp_armour_Wearer = {
+trait_darthnp_armour_wearer = {
 	cost = 1
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes
@@ -58,7 +58,7 @@ trait_darthnp_bloodlust = {
 	}
 }
 
-trait_Potential_Psionic = {
+trait_darthnp_potential_psionic = {
 	cost = 2
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes

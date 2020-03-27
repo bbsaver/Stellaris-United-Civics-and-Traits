@@ -1,28 +1,66 @@
-trait_Leadership = {
-	cost = 3
-	icon = "gfx/interface/icons/traits/Leader"
+trait_bbsaver_flight = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/flight"
 	modifier = {
-		country_influence_produces_add = 0.01
-		country_admin_cap_add = 0.01
+		planet_pops_food_upkeep_mult = 0.2
+		army_health_mult = 0.15
+		species_leader_exp_gain = 0.05
+	}
+}
+
+trait_bbsaver_camouflage = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/camouflage
+	modifier = {
+		planet_crime_mult = 0.1
+		army_damage_mult = 0.1
+	}
+}
+
+trait_bbsaver_optimistic = {
+	cost = 1
+	interface/icons/traits/optimistic
+	modifier = {
+		species_empire_size_mult = -0.05
+		pop_citizen_happiness = 0.05
+	}
+}
+
+trait_bbsaver_pessimistic = {
+	cost = -2
+	interface/icons/traits/pessimistic
+	modifier = {
+		species_empire_size_mult = 0.25
+		country_unity_produces_mult = -0.25
+	}
+}
+
+
+trait_darthnp_leadership = {
+	cost = 3
+	icon = "gfx/interface/icons/traits/leader"
+	modifier = {
+		country_influence_produces_add = 0.5
+		country_admin_cap_add = 20
 	}
 }
 	
-trait_sleepy = {
+trait_darthnp_sleepy = {
 	cost = -5
-	icon = "gfx/interface/icons/traits/Sleep"
+	icon = "gfx/interface/icons/traits/sleep"
 	modifier = {
 		planet_jobs_produces_mult = -0.4
 		pop_citizen_happiness = 0.2
 	}
 }
 
-trait_sodium_eater = {
+trait_darthnp_sodium_eater = {
 	cost = 2
-	icon = "gfx/interface/icons/traits/Sodium"
+	icon = "gfx/interface/icons/traits/sodium"
 	modifier = {
-		planet_pops_food_upkeep_mult = -1
+		planet_pops_food_upkeep_mult = -10
 		pop_environment_tolerance = 0.25
-		army__health_mult = 0.25
+		army_health_mult = 0.25
 		planet_jobs_minerals_upkeep_mult = 0.25
 	}
 }

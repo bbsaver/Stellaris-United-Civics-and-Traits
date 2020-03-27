@@ -7,26 +7,40 @@
  mod_edict_length_mult:0 "Edict Length"
 #GRAIN Seires
  civic_bbsaver_grain_ai_society:0 "AI Society"
- civic_bbsaver_grain_ai_society_desc:0 "In this society, organic and synthetic are walking alongside each other. However, could society sustain the existence of two intelligent lifeforms?" 
- civic_tooltip_bbsaver_grain_ai_society_effects:9 "Start the game with §Y8§! £pop£ Pops being sentient robots, and with the technology and infrastructure to build more.\n§R-5%§! Stability\n§R-30%§ £unity£ Monthly Unity\n§G+10%§ £energy£ Monthly Energy"
+ civic_bbsaver_grain_ai_society_desc:0 "In this society, there is a dream for the synthetic life to walk among themselves." 
+ civic_tooltip_bbsaver_grain_ai_society_effects:9 "Grant many advanceed AI and Synthetic Technologies at beginning of the game, alongside the initial 8 Robot Pops."
  civic_bbsaver_grain_bioengineering:0 "Bioengineering Society"
  civic_bbsaver_grain_bioengineering_desc:0 "For scientists and citizens of this society, bioengineering and gene editing is normal. This will not be without consequence however." 
- civic_tooltip_bbsaver_grain_bioengineering_effects:9 "Start the game with Genome Sequencing and Gene Tailoring technology.\n§G30%§! Faster Biology Research\n§R-15%§! £unity£ Unity."
+ civic_tooltip_bbsaver_grain_bioengineering_effects:9 "Start the game with Genome Sequencing and Gene Tailoring technology."
  civic_bbsaver_grain_nanotech_society:0 "Nanotech Society"
  civic_bbsaver_grain_nanotech_society_desc:0 "This civilization has conquered the world of atom. Every nanotechnologies and strange chemical are nothing but their plaything. This will also open the door toward destruction as well..." 
  civic_tooltip_bbsaver_grain_nanotech_society_effects:9 "Start with many nanotech-based technologies unlocked, including ability to produce basic strategic resources.\nUnlock Special §GNanotechnology§! Series as well."
 #Philosophy Series
  civic_bbsaver_philosophy_utilitarianism:0 "Utilitarianism"
  civic_bbsaver_philosophy_utilitarianism_desc:0 "There is only one morally good, and that is any action that maximize happiness of its citizens. This cilization will do anything if it will increase population's happiness."
- civic_tooltip_bbsaver_utilitarian_amoral:9 "Can't have any §RFanatic Ethic§!."
+ civic_tooltip_bbsaver_utilitarian_amoral:9 "Must NOT have any §YFanatic Ethic§!."
  civic_tooltip_bbsaver_philosophy_utilitarianism_effects:9 "Allow access to §YMachiavelli§! Edicts.\nHappiness: §G+10%§!\nMonthly Consumer Goods £consumer_goods£: §G20%§!\n"
  civic_bbsaver_philosophy_kantian:0 "Categorical Imperative"
  civic_bbsaver_philosophy_kantian_desc:0 "If the action cannot be applied universally as a 'good' action, then it can not be defined as 'good' at all."
  civic_tooltip_bbsaver_kantian_amoral:9 "Can't be used alongside 'inuniversal' civics, like those allowing slavery and forced labor or genocidal.\n\nEmpire must not be §RFanatic Spiritualist§!"
  civic_tooltip_bbsaver_philosophy_kantian_effects:9 "Allow access to §YUniversal Rights§! Edicts.\n$mod_planet_amenities_mult$: §G20%§!\n$mod_planet_crime_mult$: §G-20%§!\n"
  civic_bbsaver_philosophy_liberalism:0 "Liberalism"
- civic_bbsaver_philosophy_liberalism_desc:0 "Life, Freedom, and Properties are three universal rights of all life. Government only has the duty to protect this rights."
- civic_tooltip_bbsaver_philosophy_liberalism_effects:9 "Allow access to §YUniversal Rights§! Edicts.\n$pop_factions_influence_produces_mult$: §G100%§!\n$mod_pop_factions_unity_produces_add$: §G1§!\n$planet_crime_mult$: §G-20%§!\n$mod_edict_length_mult$:§R-20%§!"
+ civic_bbsaver_philosophy_liberalism_desc:0 "Life, Freedom, and Properties are three universal rights of all life that state must protect."
+ civic_tooltip_bbsaver_philosophy_liberalism_effects:9 "Allow access to §YUniversal Rights§! Edicts.\n$pop_factions_influence_produces_mult$: §G10%§!\n$planet_crime_mult$: §G-20%§!"
+ civic_bbsaver_philosophy_realism:0 "Realism"
+ civic_bbsaver_philosophy_realism:0 "There is nothing too dirty or too evil in politics, only the working evil and useless evil. Politicians of this society will use war, lie, and whatever they could to accomplish their goals, even if that goal is noble."
+ civic_tooltip_bbsaver_philosophy_utilitarianism_effects:9 "Allow access to §YMachiavelli§! Edicts."
+
+#Exclusive
+ civic_bbsaver_beta_tester:0 "Beta Tester"
+ civic_bbsaver_beta_tester_desc:0 "This civilization is god's test subject."
+ civic_tooltip_bbsaver_beta_tester_effects:9 "You shouldn't be able to choose this unless I (Modder) mess it up that bad lol\nJust in case, this civic will grant you the under-testing modded technologies."
+ origin_bbsaver_scienia_loop:0 "Looped Domed State"
+ origin_bbsaver_scienia_loop_desc:0 "This civilization used to be destroyed before it's restored by strange non-material lifeforms for a horrifying reason. Solve this incident, and survive."
+ origin_tooltip_bbsaver_scienia_loop_effects:9 "Auto-selected for 'Looped Scienia' Empire.\nThis Origin will grant you the access to special Event and disable Player's FTL system until all Events are done.\nThere will be a storm before the sunshine." 
+ #^Huge Reward post-Events
+ 
+
 
 #Technology
 #Nanotech 
@@ -44,14 +58,26 @@
  tech_bbsaver_nanobot_3_desc:0 "The nanomachine that can replicate itself using various resources it could find. Good for removing the garbage."
  tech_bbsaver_utility_fog:0 "Utility Fog"
  tech_bbsaver_utility_fog_desc:0 "Utility fog can reshape itself into many form for many application, including construction and entertainment."
- 
+#Biotech
+ tech_bbsaver_artificial_genetic_material:0 "Artificial Genetic Material"
+ tech_bbsaver_artificial_genetic_material_desc:0 "New polymers that could store genetic information better and safer than XNA will unlock more possibility to genetic engineering and lifeforms creation."
+ tech_bbsaver_ultimate_lifeforms:0 "Ultimate Lifeforms Model"
+ tech_bbsaver_ultimate_lifeforms_desc:0 "What could be the end of evolution, artificial or natural one? This is the answer - One that will survive everything, even death."
 #Buildings
 #Nanotech
-bbsaver_building_nano_fabricator:0 "Universal Fabricator" 
-bbsaver_building_nano_fabricator_desc:0 "These factories automatically break down molecules of raw materials and rearrange them into almost every imaginable manufactured products. Most specialists here are just there to give the computer new ideas for the next big thing."
-bbsaver_building_replicator_plant:0 "Replicator Plant"
-bbsaver_building_replicator_plant_desc:0 "Marvel of technology. The self-replicator employed here will eternally replicate itself, becoming the raw materials for various military and civilian application, and soon becoming the foundation of various infrastructure and even base for future machine assembly. There is however a slime chance of workers getting consumed by the grey goo by their ignorance. New Workplace PSA needed."
-bbsaver_building_utility_fog_center:0 "Utility Fog Center"
-bbsaver_building_utility_fog_center_desc:0 "Swarm of nanomachine that can reconfigure into various structures enable the virtually limitless form of maintenance, infrastructure, and amenities of our population. This center is to be the configuration database and main regulator of utility fog employed in this planet"
-# civic_tooltip_mechanists_effects:9 "Start the game with §Y8§! £pop£ Pops being robots, and with the technology and infrastructure to build more\n$mod_planet_pops_robotics_upkeep_mult$: §G-5%§!\n"
+ bbsaver_building_nano_fabricator:0 "Universal Fabricator" 
+ bbsaver_building_nano_fabricator_desc:0 "These factories automatically break down molecules of raw materials and rearrange them into almost every imaginable manufactured products. Most specialists here are just there to give the computer new ideas for the next big thing."
+ bbsaver_building_replicator_plant:0 "Replicator Plant"
+ bbsaver_building_replicator_plant_desc:0 "The marvel of nanotechnology. The self-replicator employed here will eternally replicate itself, becoming the raw materials for various military and civilian application, and soon becoming the foundation of various infrastructure and even base for future machine assembly. There is however a slime chance of workers getting consumed by the grey goo due to their ignorance. New Workplace PSA needed."
+ bbsaver_building_utility_fog_center:0 "Utility Fog Center"
+ bbsaver_building_utility_fog_center_desc:0 "Swarm of nanomachine that can reconfigure into various structures enable the virtually limitless form of maintenance, infrastructure, and amenities of our population. This center is to be the configuration database and main regulator of utility fog employed in this planet"
+ # civic_tooltip_mechanists_effects:9 "Start the game with §Y8§! £pop£ Pops being robots, and with the technology and infrastructure to build more\n$mod_planet_pops_robotics_upkeep_mult$: §G-5%§!\n"
+#Armies
+ bbsaver_grey_goo_armies:0 "Grey Goo"
+ bbsaver_grey_goo_armies_desc:0 "The nightmare from nanotechnology. Grey Goo can consume everything in part (under our command of course) and turn enemies into itself. Only EMP could disable it, albeit that is easier said than done as grey goo will certainly cause panic and collateral damage that will haunt even most militaristic solders of ours."
  
+ #Trait
+ bbsaver_xover_trait_living_weapon:0 "Living Weapon"
+ bbsaver_xover_trait_living_weapon_desc:0 "This species is just a living tool built by someone, or something, long time ago. Many failsafes still exist in their genes, hindering their capabilities."
+ bbsaver_xover_trait_utility_fog:0 "Utility Fog"
+ bbsaver_xover_trait_utility_fog_desc:0: "This machine is the collective group of self-configurating nanomachines that can change itself in various forms."

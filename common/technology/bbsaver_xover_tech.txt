@@ -1,20 +1,21 @@
 ######################
 # Nanotech Series
 #####################
-
+####################################
+#######################################
+#Self-Repairing Material
 tech_healing_material_1 = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
 	category = { materials }	
-	prerequisites = { "tech_engineering_lab_1" }
 	weight = @tier1weight3
 		
 	potential = { 
-		has_valid_civic = civic_bbsaver_grain_nanotech_society
+		has_origin = origin_bbsaver_grain_nanotech_society
 	}	
 	modifier = {
-		ship_hull_regen_add_perc = 0.05
+		ship_hull_regen_add_perc = 5
 	}
 	
 	weight_modifier = {
@@ -45,12 +46,12 @@ tech_healing_material_2 = {
 	prerequisites = { "tech_healing_material_1" }
 	weight = @tier2weight3
 		
-	potential = { 
-		has_valid_civic = civic_bbsaver_grain_nanotech_society
-	}	
+#	potential = { 
+#		has_valid_civic = civic_bbsaver_grain_nanotech_society
+#	}	
 	modifier = {
-		ship_hull_regen_add_perc = 0.2
-		planet_building_cost_mult = -0.1
+		ship_hull_regen_add_perc = 20
+		planet_buildings_cost_mult = -0.1
 	}
 	
 	weight_modifier = {
@@ -59,8 +60,9 @@ tech_healing_material_2 = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_materials"
-			}			
+			}
 		}
+
 	}
 	
 	ai_weight = {
@@ -78,17 +80,16 @@ tech_healing_material_3 = {
 	area = engineering
 	tier = 3
 	category = { materials }	
-	prerequisites = { "tech_healing_material_3" }
+	prerequisites = { "tech_healing_material_2" }
 	is_rare = yes
 	weight = @tier3weight3
 		
-	potential = { 
-		has_valid_civic = civic_bbsaver_grain_nanotech_society
-	}	
+#	potential = { 
+#		has_valid_civic = civic_bbsaver_grain_nanotech_society
+#	}	
 	modifier = {
-		ship_hull_regen_add_perc = 0.8
-		country_alloy_produces_multi = 0.5
-		planet_building_cost_mult = -0.5
+		ship_hull_regen_add_perc = 30
+		planet_buildings_cost_mult = -0.2
 	}
 	
 	weight_modifier = {
@@ -98,6 +99,108 @@ tech_healing_material_3 = {
 				area = engineering
 				has_trait = "leader_trait_expertise_materials"
 			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mania"
+			}
+		}
+		
+	}
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+#To Utility Fog!
+tech_bbsaver_nanobot_1 = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { industry }	
+	prerequisites = { "tech_engineering_1" }
+	weight = @tier1weight3
+		
+	potential = { 
+		has_origin = civic_bbsaver_grain_nanotech_society
+	}	
+	modifier = {
+		planet_building_build_speed_mult = 0.1
+		planet_buildings_cost_mult = -0.1
+#		shipclass_military_build_cost_mult = -0.1
+#		shipclass_military_build_speed_mult = 0.1
+
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+tech_bbsaver_nanobot_2 = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { industry }	
+	prerequisites = { "tech_bbsaver_nanobot_1" }
+	weight = @tier3weight1
+		
+#	potential = { 
+#		has_valid_civic = civic_bbsaver_grain_nanotech_society
+#	}	
+	modifier = {
+		planet_building_build_speed_mult = 0.25
+		planet_buildings_cost_mult = -0.25
+#		shipclass_military_build_cost_mult = -1
+#		shipclass_military_build_speed_mult = 1
+
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mania"
+			}
+
+		}
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
@@ -110,8 +213,187 @@ tech_healing_material_3 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_materials"
+				has_trait = "leader_trait_expertise_industry"
 			}
 		}
 	}
 }
+tech_bbsaver_nanobot_3 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { industry }	
+	prerequisites = { "tech_bbsaver_nanobot_2" }
+	is_rare = yes
+	weight = @tier4weight2
+		
+#	potential = { 
+#		has_valid_civic = civic_bbsaver_grain_nanotech_society
+#	}	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+
+		}
+	
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+tech_bbsaver_utility_fog = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	category = { industry }	
+	prerequisites = { "tech_bbsaver_nanobot_3" }
+	is_rare = yes
+	weight = @tier4weight3
+		
+#	potential = { 
+#		has_valid_civic = civic_bbsaver_grain_nanotech_society
+#	}	
+	modifier = {
+		planet_building_build_speed_mult = 0.25
+		planet_amenities_mult = 0.25
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+#	prereqfor_desc = {
+#		ship = {
+#			title = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_TITLE"
+#			desc = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_DESC"
+#		}
+#	}
+
+
+
+#Biotech Series
+tech_bbsaver_artificial_genetic_material = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { biology }	
+#	prerequisites = { "tech_bbsaver_nanobot_3" }
+#	is_rare = yes
+	weight = @tier1weight4
+		
+	potential = { 
+		has_origin = civic_bbsaver_grains_bioengineering
+	}	
+	modifier = {
+	#MorePointHere
+	BIOLOGICAL_species_trait_points_add = 1
+	category_biology_research_speed_mult = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+tech_bbsaver_ultimate_lifeforms = {
+	cost = @tier4cost4
+	area = society
+	tier = 4
+	category = { biology }	
+	prerequisites = { "tech_bbsaver_artificial_genetic_material" }
+	is_rare = yes
+	weight = @tier4weight3
+		
+	potential = { 
+		has_valid_civic = civic_bbsaver_grains_bioengineering
+		has_ascension_perk = ap_technological_ascendancy #Engineered Evolution 
+	}	
+	modifier = {
+	BIOLOGICAL_species_trait_points_add = 4
+	planet_pops_organic_upkeep_mult = -0.5
+	species_leader_exp_gain = 0.3
+	army_defense_health_mult = 0.5
+	army_attack_damage_mult = 0.5
+	leader_age = 50
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.1
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+#AI Society Series

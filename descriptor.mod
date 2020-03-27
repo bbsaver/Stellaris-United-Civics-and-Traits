@@ -1,8 +1,7 @@
-version="2.6"
+version="0.01"
 tags={
-	"Utilities"
-	"Gameplay"
+	"Technologies"
+	"Overhaul"
 }
-name="Astra Legacy"
-supported_version="2.5.1"
-picture="Astra_Lagacy.jpg"
+name="United Crossover Civics and Traits"
+supported_version="2.6.2"

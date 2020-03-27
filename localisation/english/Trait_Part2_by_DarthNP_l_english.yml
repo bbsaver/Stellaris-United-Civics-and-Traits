@@ -1,0 +1,18 @@
+l_english:
+    trait_bbsaver_flight:0 "Flight"
+    trait_bbsaver_flight_desc:0 "This species can fly by their wings or other special organs. This increases their understanding in shipcraft and their war advantage, but it's also the burde to their consumption."
+    
+    trait_bbsaver_camouflage:0 "Camouflage"
+    trait_bbsaver_camouflage_desc:0 "This species can change its skin's appearance to express its emotion or even hide itself. This prove useful in sneak attack, both as soldiers and criminals."
+    
+    trait_bbsaver_optimistic:0 "Optimistic"
+    trait_bbsaver_optimistic_desc:0 "Nothing in this universe could rob this species's happy and optimistic worldview"
+    
+    trait_bbsaver_pessimistic:0 "Pessimistic"
+    trait_bbsaver_pessimistic_desc:0 "Wait a sec"
+    
+    trait_darthnp_sleepy:0 "Sleepy"
+    trait_darthnp_sleepy_desc: 0 "This species sleep a lot."
+    
+    trait_darthnp_sodium_eater:0 "Sodium eater"
+    trait_darthnp_sodium_eater_desc: 0""This species isn't a carbon based organism. Instead, they are mainly made of metal cells and relies on the reaction of water and sodium for energy"

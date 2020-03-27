@@ -9,15 +9,15 @@ country_event = {
 	immediate = {
 			if = {
 				limit = {
-					has_civic = civic_bbsaver_grain_ai_society
+					has_origin = origin_bbsaver_grain_ai_society
 					}
 			
 			give_technology = { message = no tech = tech_powered_exoskeletons }
 			give_technology = { message = no tech = tech_robotic_workers }
-			give_technology = { message = no tech = tech_tech_planetary_unification }	
-			give_technology = { message = no tech = tech_colonial_centralization }	
+			#give_technology = { message = no tech = tech_tech_planetary_unification }	
+			#give_technology = { message = no tech = tech_colonial_centralization }	
 			give_technology = { message = no tech = tech_droid_workers }	
-			give_technology = { message = no tech = tech_galactic_administration }	
+			#give_technology = { message = no tech = tech_galactic_administration }	
 			give_technology = { message = no tech = tech_robotic_workers }
 			give_technology = { message = no tech = tech_administrative_ai }
 			give_technology = { message = no tech = tech_self_aware_logic }
@@ -55,6 +55,9 @@ country_event = {
 			
 			give_technology = { message = no tech = tech_genome_mapping }
 			give_technology = { message = no tech = tech_gene_tailoring }	
+			give_technology = { message = no tech = tech_cloning }
+			give_technology = { message = no tech = tech_vitality_boosters}
+			give_technology = { message = no tech = tech_frontier_health}
 			}	
 	}
 }
@@ -70,14 +73,39 @@ country_event = {
 					has_civic = civic_bbsaver_grain_nanotech_society
 					}
 			
-			give_technology = { message = no tech = tech_engineering_lab_1 }
+			give_technology = { message = no tech = tech_engineering_1 }
 			give_technology = { message = no tech = tech_alloys_1 }
 			give_technology = { message = no tech = tech_alloys_2 }	
 			give_technology = { message = no tech = tech_luxuries_1 }	
 			give_technology = { message = no tech = tech_volatile_motes }	
 			give_technology = { message = no tech = tech_tech_exotic_gases }	
 			give_technology = { message = no tech = tech_rare_crystals }
-			give_technology = { message = no tech = tech_administrative_ai }
+			#give_technology = { message = no tech = tech_administrative_ai }
+			
+			}	
+	}
+}
+country_event = {
+	id = bbsaver_other_grain_civic.3
+	hide_window = yes
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	immediate = {
+			if = {
+				limit = {
+					has_civic = civic_bbsaver_beta_tester
+					}
+			
+			give_technology = { message = no tech = tech_healing_material_1 }
+			give_technology = { message = no tech = tech_healing_material_2 }
+			give_technology = { message = no tech = tech_healing_material_3 }
+
+			give_technology = { message = no tech = tech_bbsaver_nanobot_1 }
+			give_technology = { message = no tech = tech_bbsaver_nanobot_2 }
+			give_technology = { message = no tech = tech_bbsaver_nanobot_3 }
+
+			give_technology = { message = no tech = tech_bbsaver_utility_fog }
 			
 			}	
 	}

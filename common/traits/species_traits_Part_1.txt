@@ -10,7 +10,7 @@ trait_darthnp_succubus_influence = {
 	modifier = {
 		bio_pop_growth_speed = 0.15 #I love you succy
 		bio_pop_growth_from_immigration = 0.05 
-		planet_pops_food_upkeep_mult = 0.05
+		planet_pops_consumer_goods_upkeep_mult = 0.05
 	}
 }
 

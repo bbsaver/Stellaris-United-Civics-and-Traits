@@ -2,7 +2,7 @@
 #  Trait used by Astrain   #
 ############################
 
-trait_Succubus_Influence = {
+trait_darthnp_succubus_Influence = {
 	cost = 2
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes
@@ -14,7 +14,7 @@ trait_Succubus_Influence = {
 	}
 }
 
-trait_Armour_Wearer = {
+trait_darthnp_armour_Wearer = {
 	cost = 1
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes
@@ -27,7 +27,7 @@ trait_Armour_Wearer = {
 	}
 }
 
-trait_Crazy = {
+trait_darthnp_crazy = {
 	cost = -3
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes
@@ -44,7 +44,7 @@ trait_Crazy = {
 	}
 }
 
-trait_Bloodlust = {
+trait_darthnp_bloodlust = {
 	cost = -3
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes
@@ -72,7 +72,7 @@ trait_Potential_Psionic = {
 	}
 }
 
-trait_Vampire_influence = {
+trait_darthnp_vampire_influence = {
 	cost = 0
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes
@@ -86,7 +86,7 @@ trait_Vampire_influence = {
 	}
 }
 
-trait_Drunkyard = {
+trait_darthnp_drunkyard = {
 	cost = -3
 	allowed_archetypes = { BIOLOGICAL }
 	modification = yes

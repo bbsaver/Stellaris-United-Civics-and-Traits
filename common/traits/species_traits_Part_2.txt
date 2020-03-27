@@ -1,0 +1,89 @@
+################################
+#Trait Part 2 Used by Astrain  #
+################################
+
+trait_Utility_Fog = {
+	cost = 0
+	allowed_archetypes = { ROBOT MACHINE }
+	opposites = { "trait_robot_bulky" "trait_robot_double_jointed" }
+	modification = yes
+	icon = "gfx/interface/icons/traits/Ufog.dds"
+	modifier = {
+		planet_pop_assembly_mult = 0.5
+		pop_housing_usage_x = -0.5
+		planet_jobs_alloys_product_mult = 0.25
+		planet_jobs_amenities_product_mult = 0.25
+		planet_pops_energy_robotics_upkeep_mult = 0.5
+	}
+}
+
+trait_Living_tools = {
+	cost = 0
+	allowed_archetypes = { ROBOT MACHINE BIOLOGICAL}
+	modification = no
+	icon = "gfx/interface/icons/traits/Ltool.dds"
+	modifier = {
+		army_damage_mult = 0.5
+		armies_upkeep_mult = 0.5
+		planet_jobs_minerals_product_mult = 0.5
+		planet_jobs_amenities_product_mult = 0.5
+		planet_jobs_endegy_product_mult = 0.5
+		planet_jobs_unity_product_mult = -0.5
+	}
+}
+
+###################################################################
+#Wait for Update #
+##################
+#
+#trait_Optimistic = {
+#	cost = 1
+#	allowed_archetypes {BIOLOGICAL}
+#	modification = yes
+#	icon = "gfx/interface/icons/traits/Optimistic"
+#	modifier = {
+#		country_admin_cap_mult = 0.25
+#		country_unity_produces_add = 0.1
+#	}
+#}
+#
+#trait_Pessimistic = {
+#	cost = -2
+#	allowed_archetypes {BIOLOGICAL}
+#	modification = yes
+#	icon = "gfx/interface/icons/traits/Pessimitic"
+#	modifier = {
+#		country_admin_cap_mult = -0.25
+#		country_unity_produces_mult = -0.25
+#	}
+#}
+#
+###################################################################
+trait_Leadership = {
+	cost = 3
+	icon = "gfx/interface/icons/traits/Leader
+	modifier = {
+		country_influence_produces_add = 0.01
+		country_admin_cap_add = 0.01
+	}
+}
+	
+trait_sleepy = {
+	cost = -5
+	icon = "gfx/interface/icons/traits/Sleep
+	modifier = {
+		planet_jobs_produces_mult = -0.4
+		pop_citizen_happiness = 0.2
+	}
+}
+
+trait_sodium_eater = {
+	cost = 2
+	icon = "gfx/interface/icons/traits/Sodium"
+	modifier = {
+		planet_pops_food_upkeep_mult = -1
+		pop_environment_tolerance = 0.25
+		army__health_mult = 0.25
+		planet_jobs_minerals_upkeep_mult = 0.25
+	}
+}

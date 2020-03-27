@@ -10,7 +10,7 @@ trait_Utility_Fog = {
 	icon = "gfx/interface/icons/traits/Ufog.dds"
 	modifier = {
 		planet_pop_assembly_mult = 0.5
-		pop_housing_usage_x = -0.5
+		pop_housing_usage_mult = -0.5
 		planet_jobs_alloys_product_mult = 0.25
 		planet_jobs_amenities_product_mult = 0.25
 		planet_pops_energy_robotics_upkeep_mult = 0.5
@@ -27,7 +27,7 @@ trait_Living_tools = {
 		armies_upkeep_mult = 0.5
 		planet_jobs_minerals_product_mult = 0.5
 		planet_jobs_amenities_product_mult = 0.5
-		planet_jobs_endegy_product_mult = 0.5
+		planet_jobs_enegy_product_mult = 0.5
 		planet_jobs_unity_product_mult = -0.5
 	}
 }
@@ -61,7 +61,7 @@ trait_Living_tools = {
 ###################################################################
 trait_Leadership = {
 	cost = 3
-	icon = "gfx/interface/icons/traits/Leader
+	icon = "gfx/interface/icons/traits/Leader"
 	modifier = {
 		country_influence_produces_add = 0.01
 		country_admin_cap_add = 0.01
@@ -70,7 +70,7 @@ trait_Leadership = {
 	
 trait_sleepy = {
 	cost = -5
-	icon = "gfx/interface/icons/traits/Sleep
+	icon = "gfx/interface/icons/traits/Sleep"
 	modifier = {
 		planet_jobs_produces_mult = -0.4
 		pop_citizen_happiness = 0.2

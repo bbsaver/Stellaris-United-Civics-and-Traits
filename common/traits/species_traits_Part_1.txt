@@ -10,7 +10,7 @@ trait_darthnp_succubus_influence = {
 	modifier = {
 		bio_pop_growth_speed = 0.15 #I love you succy
 		bio_pop_growth_from_immigration = 0.05 
-		planet_pops_energy_upkeep_mult = 0.05
+		planet_pops_food_upkeep_mult = 0.05
 	}
 }
 
@@ -78,11 +78,11 @@ trait_darthnp_vampire_influence = {
 	modification = yes
 	icon = "gfx/interface/icons/traits/Vampire.dds"
 	modifier = {
-		planet_jobs_food_product_mult = 0.2
+		planet_jobs_food_produces_mult = 0.2
 		army_defense_damage_mult = 0.5
 		army_attack_damage_mult = 0.5
 		country_trust_growth = -0.8
-		planet_jobs_energy_product_mult = -0.5
+		planet_jobs_energy_produces_mult = -0.5
 	}
 }
 
@@ -93,7 +93,7 @@ trait_darthnp_drunkyard = {
 	icon = "gfx/interface/icons/traits/Drunkyard.dds"
 	modifier = {
 		planet_amenities_mult = 0.2
-		planet_jobs_entertainer_produces_produces_mult = 0.2
+		planet_jobs_entertainer_produces__mult = 0.2
 		army_damage_mult = -0.2
 		leader_age = -10
 	}

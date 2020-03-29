@@ -2,7 +2,7 @@ trait_bbsaver_flight = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/flight"
 	modifier = {
-		planet_pops_food_upkeep_mult = 0.2
+		planet_pops_organics_food_upkeep_mult = 0.2
 		army_health_mult = 0.15
 		species_leader_exp_gain = 0.05
 	}
@@ -40,7 +40,7 @@ trait_darthnp_leadership = {
 	cost = 3
 	icon = "gfx/interface/icons/traits/leader"
 	modifier = {
-		country_influence_produces_add = 0.5
+		country_influence_produces_mult = 0.1
 		country_admin_cap_add = 20
 	}
 }
@@ -58,9 +58,10 @@ trait_darthnp_sodium_eater = {
 	cost = 2
 	icon = "gfx/interface/icons/traits/sodium"
 	modifier = {
-		planet_pops_food_upkeep_mult = -10
+		planet_pops_organics_food_upkeep_mult = -10
 		pop_environment_tolerance = 0.25
-		army_health_mult = 0.25
-		planet_jobs_minerals_upkeep_mult = 0.25
+		army_defense_health_mult = 0.25
+		army_attack_health_mult = 0.25
+		planet_jobs_minerals_produces_mult = -0.25
 	}
 }

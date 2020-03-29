@@ -22,7 +22,7 @@ trait_darthnp_armour_wearer = {
 	modifier = {
 		planet_jobs_minerals_upkeep_mult = 0.05
 		armies_cost_mult = 0.1
-		army__health_mult = 0.6
+		army_health_mult = 0.6
 		country_unity_produces_mult = 0.1
 	}
 }

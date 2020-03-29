@@ -20,10 +20,11 @@ trait_darthnp_armour_wearer = {
 	modification = yes
 	icon = "gfx/interface/icons/traits/armour_wear.dds"
 	modifier = {
-		planet_jobs_minerals_upkeep_mult = 0.05
+		planet_jobs_minerals_produces_mult = -0.05
 		armies_cost_mult = 0.1
-		army_health_mult = 0.6
-		country_unity_produces_mult = 0.1
+		army_attack_health_mult = 0.6
+		army_defense_health_mult =0.6
+		planet_jobs_unity_produces_mult = 0.1
 	}
 }
 
@@ -51,7 +52,7 @@ trait_darthnp_bloodlust = {
 	icon = "gfx/interface/icons/traits/bloodlust.dds"
 	modifier = {
 		pop_growth_from_immigration = -0.2
-		planet_jobs_food_product_mult = 0.1
+		planet_jobs_food_produces_mult = 0.1
 		army_damage_mult = 0.2
 		country_trust_growth = -0.25
 		pop_ethic_militarist_attraction_mult = 0.3
@@ -79,8 +80,7 @@ trait_darthnp_vampire_influence = {
 	icon = "gfx/interface/icons/traits/Vampire.dds"
 	modifier = {
 		planet_jobs_food_produces_mult = 0.2
-		army_defense_damage_mult = 0.5
-		army_attack_damage_mult = 0.5
+		army_damage_mult = 0.5
 		country_trust_growth = -0.8
 		planet_jobs_energy_produces_mult = -0.5
 	}
@@ -93,8 +93,8 @@ trait_darthnp_drunkyard = {
 	icon = "gfx/interface/icons/traits/Drunkyard.dds"
 	modifier = {
 		planet_amenities_mult = 0.2
-		planet_jobs_entertainer_produces__mult = 0.2
-		army_damage_mult = -0.2
+		planet_jobs_entertainer_produces_mult = 0.2
+		army_damage_mult = -0.3
 		leader_age = -10
 	}
 }

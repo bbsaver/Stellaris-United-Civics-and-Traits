@@ -1,25 +1,32 @@
 trait_bbsaver_flight = {
 	cost = 0
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
 	icon = "gfx/interface/icons/traits/flight"
 	modifier = {
 		planet_pops_organics_food_upkeep_mult = 0.2
-		army_health_mult = 0.15
+		army_defense_health_mult = 0.15
+		army_attack_health_mult = 0.15
 		species_leader_exp_gain = 0.05
 	}
 }
 
 trait_bbsaver_camouflage = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/camouflage
+	icon = "gfx/interface/icons/traits/camouflage"
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
 	modifier = {
-		planet_crime_add = 0.1
+		planet_crime_add = 10
 		army_damage_mult = 0.1
 	}
 }
 
 trait_bbsaver_optimistic = {
 	cost = 1
-	interface/icons/traits/optimistic
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
+	icon = "gfx/interface/icons/traits/optimistic"
 	modifier = {
 		species_empire_size_mult = -0.05
 		pop_happiness = 0.05
@@ -28,7 +35,9 @@ trait_bbsaver_optimistic = {
 
 trait_bbsaver_pessimistic = {
 	cost = -2
-	interface/icons/traits/pessimistic
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
+	icon = "gfx/interface/icons/traits/pessimistic"
 	modifier = {
 		species_empire_size_mult = 0.25
 		planet_jobs_unity_produces_mult = -0.25
@@ -38,15 +47,19 @@ trait_bbsaver_pessimistic = {
 
 trait_darthnp_leadership = {
 	cost = 3
+	allowed_archetypes = { BIOLOGICAL ROBOTIC }
+	modification = yes
 	icon = "gfx/interface/icons/traits/leader"
 	modifier = {
 		pop_factions_produces_mult = 0.1
-		planet_jobs_bureaucrat_produces_mult = 0.1
+		species_empire_size_mult = -0.1
 	}
 }
 	
 trait_darthnp_sleepy = {
 	cost = -5
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
 	icon = "gfx/interface/icons/traits/sleep"
 	modifier = {
 		planet_jobs_produces_mult = -0.4
@@ -56,6 +69,8 @@ trait_darthnp_sleepy = {
 
 trait_darthnp_sodium_eater = {
 	cost = 2
+	allowed_archetypes = { BIOLOGICAL }
+	modification = yes
 	icon = "gfx/interface/icons/traits/sodium"
 	modifier = {
 		planet_pops_organics_food_upkeep_mult = -10
